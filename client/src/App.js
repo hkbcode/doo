@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Greeter from './artifact/Greeter.json'
+
+import { Drizzle } from "@drizzle/store";
+
+// complete this, to be continued...
+
+const drizzleOptions = {
+  contracts: [Greeter],
+
+}
+
+const drizzle = new Drizzle(drizzleOptions);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+   <h1> Dapps with Reactjs </h1>
+
+
+
     </div>
   );
 }
